@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang=" en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewpoint" content="width-device-width, initial-scale=1.0">
+    <title>Souhardya-Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wgh@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+     body{
+        background-color: rgb(17, 7, 53) ;
+        color: whitesmoke;
+        font-family: 'Poppins', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     }
+
+    nav{
+        display: flex;
+        justify-content: space-around ;
+        align-items: center ;
+        height: 60px;
+        background: rgb(15, 6, 32);
+    }
+   nav ul{
+        display: flex;
+        justify-content: center ;
+
+   }
+   nav ul li{
+       list-style: none;
+       margin: 0 23px;    
+   }
+   nav ul li a{
+       text-decoration:  none;
+       color: white;
+   }
+   nav ul li a:hover{
+       text-decoration:  none;
+       color: rgb(155, 155, 243);
+       font-size: 1.1rem;
+   }
+   .left{
+    font-size: 1.5rem;
+   }
+   .firstSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 120px 0;
+   }
+   .firstSection> div{
+    width: 30%;
+   }
+   .leftSection{
+    font-size: 3rem;
+    
+   }
+   .RightSection img{
+            width:80%;
+           
+   }
+   .Purple{
+    color:rgb(155, 155, 243);
+   }
+   #element{
+    color: rgb(155, 155, 243);
+   }
+   .secondSection{
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+   }
+   .secondSection h1{
+    font-size: 1.9rem;
+   }
+   .secondSection .box{
+    background: white;
+    width: 80vw;
+    height: 2px;
+    margin: 56px 0;
+    display: flex;
+   }
+   .secondSection .vertical{
+    height: 93px;
+    width: 1px;
+    background-color: white;
+    margin: 0 120px;
+    display: flex;
+   }
+   .image-top{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: -32px;
+    left: -9px;
+   }
+   .vertical-title{
+           position: relative;
+           top: 75px;
+           width: 150px
+   }
+   .vertical-desc{
+            position: relative;
+            align-items: center;
+            top: 120px;
+            color: gray;
+            width: 300px;
+            font-size: 9px;
+   }
+   main hr{
+    border: 0;
+    background-color: rgb(155, 155, 243);
+    height: 1.2px;
+    margin: 40px 84px
+   }
+   .gray{
+          color: gray;
+   }
+   footer{
+    background-color: rgb(23, 23, 54);
+   }
+   .footer{
+    display: flex;
+    padding: 23px 122px;
+    justify-content: space-evenly;
+   }
+   .footer ul{
+    list-style: none;
+   }
+   .footer> div{
+    width:223px;
+   }
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Souhardya's Porfolio</div>   
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About </a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a</li> 
+                    <li><a href="/">Contact Me </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+           <div class="leftSection">
+              <div>Hi everyone, My name is <span class="Purple">Souhardya</span></div>
+            <div>And I am a passionate </div>
+            <span id="element"></span>
+           </div>
+           <div class="RightSection">
+            <img src="sou.jpg" >
+           </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="gray">What have I done so far?</span>
+            <h1>Work Experience </h1>
+
+            <div class="box">
+            
+                <div class="vertical">
+                    <img class="image-top" src="html.png">
+                    <div class="vertical-title">HTML Developer (2020-2023)</div>
+                    <div class="vertical-desc">
+                        Proficient HTML developer adept at crafting responsive, semantic web pages with CSS and JavaScript integration for engaging user experiences.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="nodejs.png">
+                    <div class="vertical-title">NodeJS Developer (2018-2021)</div>
+                    <div class="vertical-desc">
+                        Experienced Node.js developer specializing in backend development, RESTful APIs, real-time applications, scalable architectures, and modern JavaScript frameworks.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="java.png">
+                    <div class="vertical-title">Java Developer (2019-2023)</div>
+                    <div class="vertical-desc">
+                        Skilled Java developer proficient in backend development, Java frameworks, problem-solving, and creating scalable, robust applications for diverse industries.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="python.png">
+                    <div class="vertical-title">Python Developer (2018-2024)</div>
+                    <div class="vertical-desc">
+                        Experienced Python developer proficient in backend development, data analysis, automation, scripting, and building scalable web applications and APIs.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="react.png">
+                    <div class="vertical-title">ReactJS Developer (2018-2023)</div>
+                    <div class="vertical-desc">
+                        Skilled React.js developer specializing in building interactive UI components, state management with Redux, RESTful API integration, and responsive web applications.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+         <div class="flex">
+            <div class="footer-first">
+                <h3>Souhardya's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact</li>
+                </ul>
+            </div>
+         </div>
+         <div class="text-center">
+            WWW.Souhardya'sPortfolio.com |All rights reserved
+         </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer', 'Python developer','Java Developer','Video editor',],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html>
