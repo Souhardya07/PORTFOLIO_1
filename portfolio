@@ -41,9 +41,40 @@
        color: white;
    }
    nav ul li a:hover{
-       text-decoration:  none;
-       color: rgb(155, 155, 243);
-       font-size: 1.1rem;
+     color: rgb(155, 155, 243);
+     font-size: 1.2rem;
+   }
+   .footer-first ul li a{
+    text-decoration:  none;
+    color: white;
+   }
+   .footer-first ul li a:hover{
+     color: rgb(155, 155, 243);
+     font-size: 1.2rem;
+   }
+   .footer-second ul li a{
+    text-decoration:  none;
+    color: white;
+   }
+   .footer-second ul li a:hover{
+     color: rgb(155, 155, 243);
+     font-size: 1.2rem;
+   }
+   .footer-third ul li a{
+    text-decoration:  none;
+    color: white;
+   }
+   .footer-third ul li a:hover{
+     color: rgb(155, 155, 243);
+     font-size: 1.2rem;
+   }
+   .footer-fourth ul li a{
+    text-decoration:  none;
+    color: white;
+   }
+   .footer-fourth ul li a:hover{
+     color: rgb(155, 155, 243);
+     font-size: 1.2rem;
    }
    .left{
     font-size: 1.5rem;
@@ -61,9 +92,31 @@
     font-size: 3rem;
     
    }
+   .leftSection .buttons{
+    padding: 30px 0;
+   }
+   .leftSection .btn{
+    font-size: 1.2rem;
+    background-color: rgb(15, 6, 32);
+    border-color: white;
+    color: white;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+   }
+   .leftSection .btn:hover{
+    font-size: 1.5rem;
+    background-color: rgb(155, 155, 243);
+    border-color: black;
+    color: black;
+    
+   }
    .RightSection img{
             width:80%;
            
+   }
+   .RightSection img:hover{
+    width: 100%;
    }
    .Purple{
     color:rgb(155, 155, 243);
@@ -90,12 +143,19 @@
     height: 93px;
     width: 1px;
     background-color: white;
-    margin: 0 120px;
+    margin: 0 6vw;
     display: flex;
    }
    .image-top{
     width: 50px;
     height: 50px;
+    position: relative;
+    top: -32px;
+    left: -9px;
+   }
+   .image-top:hover{
+    width: 80px;
+    height:80px;
     position: relative;
     top: -32px;
     left: -9px;
@@ -133,9 +193,66 @@
    .footer ul{
     list-style: none;
    }
-   .footer> div{
+   .footer > div{
     width:223px;
    }
+
+   footer .rights{
+    text-align: center;
+    color: gray;
+    padding:12px 0 ;
+   }
+   @media  screen and (max-width:1000px){
+    body{
+      /* background-color: red; */
+    }
+    .box{
+        flex-direction: column;
+    }
+    .vertical-title, .vertical-desc{
+          left: 45px;
+    }
+    .secondSection .vertical{
+        height: unset;
+    }
+    .firstSection{
+        flex-direction: column-reverse;
+    }
+    .secondSection .box{
+        width: 50vw;
+    }
+    nav{
+        flex-direction: column ;
+    }
+    .leftSection{
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .RightSection{
+        width: 721 px !important;
+        display: flex;
+        justify-content: center;
+    }
+    .RightSection img{
+        width: 45vw;
+        margin-bottom: 73px; 
+    }
+    .secondSection{
+        height: 141vh;
+    }
+    body{
+        min-width: fit-content;
+    }
+    .image-top{
+        top: 133px;
+    }
+   }
+
+
+
 </style>
 </head>
 <body>
@@ -159,7 +276,11 @@
               <div>Hi everyone, My name is <span class="Purple">Souhardya</span></div>
             <div>And I am a passionate </div>
             <span id="element"></span>
+           <div class="buttons">
+               <button class="btn">Download Resume</button>
+               <button  class="btn">To The Github </button>
            </div>
+        </div>
            <div class="RightSection">
             <img src="sou.jpg" >
            </div>
@@ -210,28 +331,44 @@
         </section>
     </main>
     <footer>
-         <div class="flex">
+         <div class="footer">
             <div class="footer-first">
                 <h3>Souhardya's Developer Portfolio</h3>
             </div>
             <div class="footer-second">
                 <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Services</li>
-                <li>Contact</li>
+                <li> <a href="/">Home</a></li>
+                 <li> <a href="/">About</a></li>
+                 <li> <a href="/">Services</a></li>
+                 <li> <a href="/">Contact</a></li>
                 </ul>
             </div>
+            <div class="footer-third">
+                <ul>
+                 <li> <a href="/">web dev</a></li>
+                 <li> <a href="/">Java</a></li>
+                 <li> <a href="/">Python</a></li>
+                 <li> <a href="/">certificates</a></li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                  <li> <a href="/">Linkdin</a></li>
+                  <li> <a href="/">Twitter</a></li>
+                  <li> <a href="/">referrals</a></li>
+                  <li> <a href="/">mail id</a></li>
+                </ul>
+            </div>
+         <div class="rights">
+           Copyright|	&#169;| WWW.SouhardyaPortfolio.com |All rights reserved
          </div>
-         <div class="text-center">
-            WWW.Souhardya'sPortfolio.com |All rights reserved
-         </div>
+        </div>
     </footer>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
           strings: ['Web Developer', 'Python developer','Java Developer','Video editor',],
-          typeSpeed: 50,
+          typeSpeed: 100,
         });
       </script>
 </body>
